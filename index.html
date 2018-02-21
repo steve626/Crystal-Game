@@ -4,11 +4,108 @@
     <meta charset="UTF-8">
     <title>Crystal Game</title>
 
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">   
+
     <!-- Added link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Added a link to Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
 
 </head>
 <body>
+
+<div class="contianer">
+    <div class="title">
+
+        <div class="row">                
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-3">Crystals Collector!</h1>
+                   <hr class="style2">
+                    <p class="lead">
+                      <ul class="list-group">
+                            <li class="list-group-item list-group-item-light">You will be given a random number at the start of the game.</li>
+                            <li class="list-group-item list-group-item-dark">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+                            <li class="list-group-item list-group-item-light">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</li>
+                            <li class="list-group-item list-group-item-dark">The value of each cystal is hidden from you until you click on it.</li>
+                            <li class="list-group-item list-group-item-light">The values of the crystals will randomly change at the beginning of each new game.</li>
+                            <li class="list-group-item list-group-item-secondary">Good luck!</li>
+                      </ul>                    
+                  </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+    <div id="game" class="container border-dark">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card text-white border-dark bg-primary mb-3" style="max-width: 18rem;">
+                        <h3 class="card-header">Target Score</h3>
+                        <hr class="style2">
+                        <div class="card-body">
+                          <p class="card-text" id="targetScore"><!--target score will go here--></p>
+                        </div>
+                </div>
+            </div>
+        </div>
+                
+        <div class="row">
+            <div class="col-md-8"  id="jewels">
+                <div class="col-sm-2" id="jewelOne" ><img src="assets/images/jewelOne.png" alt="Jewel One" width="125px" ></div>
+                <div class="col-sm-2" id="jewelTwo"><img src="assets/images/jewelTwo.png" alt="Jewel Two" width="125px" ></div>
+                <div class="col-sm-2" id="jewelThree"><img src="assets/images/jewelThree.png" alt="Jewel Three" width="125px" ></div>
+                <div class="col-sm-2" id="jewelFour"><img src="assets/images/jewelFour.png" alt="Jewel Four" width="125px" ></div>
+            
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card text-white border-dark bg-info mb-3" style="max-width: 18rem;">
+                        <h3 class="card-header">Your Score</h3>
+                        <hr class="style2">
+                        <div class="card-body">                          
+                        <p  class="card-text" id="userScore"><!--user score will go here--></p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-sm-3">
+
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  wins
+                  <span id="wins" class="badge badge-primary badge-pill">14</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  losses
+                  <span id="losses" class="badge badge-primary badge-pill">2</span>
+                </li>                
+            </ul>
+        </div>
+
+    </div>
+
+        
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript"></script>
+   
+
+</body>
+</html>
