@@ -5,13 +5,15 @@
     <title>Crystal Game</title>
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+     <!-- Added a link to Bootstrap-->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">   
 
     <!-- Added link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Added a link to Bootstrap-->
+   
     
 
 </head>
@@ -21,17 +23,17 @@
     <div class="title">
 
         <div class="row">                
-            <div class="jumbotron jumbotron-fluid">
+            <div class="jumbotron">
                 <div class="container">
                   <h1 class="display-3">Crystals Collector!</h1>
                    <hr class="style2">
                     <p class="lead">
                       <ul class="list-group">
                             <li class="list-group-item list-group-item-light">You will be given a random number at the start of the game.</li>
-                            <li class="list-group-item list-group-item-dark">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
-                            <li class="list-group-item list-group-item-light">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</li>
+                            <li class="list-group-item list-group-item-dark">There are four crystals below. By clicking on a crystal you will add a specific amount of points to YOUR SCORE.</li>
+                            <li class="list-group-item list-group-item-light">You win the game by matching your total score to the TARGET SCORE, you lose the game if YOUR SCORE goes above the TARGET SCORE.</li>
                             <li class="list-group-item list-group-item-dark">The value of each cystal is hidden from you until you click on it.</li>
-                            <li class="list-group-item list-group-item-light">The values of the crystals will randomly change at the beginning of each new game.</li>
+                            <li class="list-group-item list-group-item-light">The values of the crystals will randomly change at the beginning of each new round.</li>
                             <li class="list-group-item list-group-item-secondary">Good luck!</li>
                       </ul>                    
                   </p>
@@ -53,7 +55,7 @@
             </div>       
        
             <div class="col-sm-2">
-                    <button type="button" class="btn btn-info">Your Score<span class="badge badge-pill badge-light" id="userScore"></span></button>
+                    <button type="button" class="btn btn-info">Your Score<span class="badge badge-pill badge-light" id="userScore">0</span></button>
             </div>
         </div>
 
@@ -72,18 +74,18 @@
 
     <div class="row">
 
-            <div class="col-md-6">
+            <!-- <div class="col-md-6"> -->
 
                 
-                        <div class="col-sm-3">
-                            <button type="button" class="btn btn-success" id="wins">WINS<span class="badge badge-pill badge-light" id="winCount"></span>0</button>
+                        <div class="col-sm-2">
+                            <button type="button" class="btn btn-success" id="wins">WINS<span class="badge badge-pill badge-light" id="winCount">0</span></button>
                         </div>
                                          
                    
-                        <div class="col-sm-3">
-                                <button type="button" class="btn btn-danger" id="losses">LOSSES<span class="badge badge-pill badge-light" id="lossCount"></span>0</button>
+                        <div class="col-sm-2">
+                                <button type="button" class="btn btn-danger" id="losses">LOSSES<span class="badge badge-pill badge-light" id="lossCount">0</span></button>
                         </div>
-            </div>
+            <!-- </div> -->
 
         </div>
 

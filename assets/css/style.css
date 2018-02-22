@@ -12,13 +12,17 @@ span {
 }
 
 .jumbotron {
-	padding: 12px;
+	padding:5px;
+	margin:15px;
+	margin-left:10%;
 	background-color: cyan;
 }
 body {
 	background: aquamarine;
-	font-size:1.5rem;
+	
 }
-#wins {
-	margin-right: 57px;
+
+li {
+	line-height: 80%;
 }
+

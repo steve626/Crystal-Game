@@ -38,6 +38,8 @@ var targetNum = (Math.floor(Math.random()*(120-20)+19));
     console.log(gameArr);
 
 
+
+
   //assign value of crystals, assures no doubles. Just shuffle the array of possible numbers and takes the first four
 
     var jewelOne = gameArr[0];
@@ -77,9 +79,11 @@ $('.jewel').on('click', function()
                 $('#userScore').html(playerNum);
 
                 console.log(playerNum)
+
+            
 //win/loss states
 
-//if (playerNum < targetNum){
+//while (playerNum < targetNum){
    
    // playerNum == targetNum, game reset, wins++
    if (playerNum === targetNum){
@@ -87,7 +91,8 @@ $('.jewel').on('click', function()
        document.querySelector('#winCount').innerHTML = wins;
        alert("YOU WIN!");
        reset();
-   }
+       
+   };
 
 
    //go over: lose and everything resets, new numbers get generated
@@ -97,20 +102,17 @@ $('.jewel').on('click', function()
         document.querySelector('#lossCount').innerHTML = losses;
         alert("Sorry, you went over");
         reset();
-    }
+       
+    };
+ 
+     //game reset
+function reset(){
+     gameArr =[];
+     playerNum = 0;  
+   
+};
 
 });
-
-   //track wins and losses (psychic game)
-   //game reset
-var reset = function(){
-    var wins = 0;
-    var losses = 0;
-    var gameArr =[];
-    var playerNum = 0;
-    var userScore = 0;
-   
-}
 
 
 
