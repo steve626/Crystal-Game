@@ -43,68 +43,58 @@
         </div>
 
     </div>
+</div>
+    <div class="container" id="game">
 
-    <div class="container">
-
-    <div id="game" class="container border-dark">
+    <div class="container border-dark">
         <div class="row">
-            <div class="col-sm-3">
-                <div class="card text-white border-dark bg-primary mb-3" style="max-width: 18rem;">
-                        <h3 class="card-header">Target Score</h3>
-                        <hr class="style2">
-                        <div class="card-body">
-                          <p class="card-text" id="targetScore"><!--target score will go here--></p>
-                        </div>
-                </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-warning">Target Score<span class="badge badge-pill badge-light" id="target"></span></button>
+            </div>       
+       
+            <div class="col-sm-2">
+                    <button type="button" class="btn btn-info">Your Score<span class="badge badge-pill badge-light" id="userScore"></span></button>
             </div>
         </div>
-                
-        <div class="row">
-            <div class="col-md-8"  id="jewels">
-                <div class="col-sm-2" id="jewelOne" ><img src="assets/images/jewelOne.png" alt="Jewel One" width="125px" ></div>
-                <div class="col-sm-2" id="jewelTwo"><img src="assets/images/jewelTwo.png" alt="Jewel Two" width="125px" ></div>
-                <div class="col-sm-2" id="jewelThree"><img src="assets/images/jewelThree.png" alt="Jewel Three" width="125px" ></div>
-                <div class="col-sm-2" id="jewelFour"><img src="assets/images/jewelFour.png" alt="Jewel Four" width="125px" ></div>
-            
-            </div>
 
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="card text-white border-dark bg-info mb-3" style="max-width: 18rem;">
-                        <h3 class="card-header">Your Score</h3>
-                        <hr class="style2">
-                        <div class="card-body">                          
-                        <p  class="card-text" id="userScore"><!--user score will go here--></p>
-                        </div>
-                </div>
-            </div>
-        </div>
     </div>
+    <div class="row">
+            <div class="col-md-8"  id="jewels">
+                
+                <button><img src="assets/images/jewelOne.png" alt="Jewel One" id="jewel-1" class="jewel" style="width:128px;height:128px;"></button>
+                <button><img src="assets/images/jewelTwo.png" alt="Jewel Two" id="jewel-2" class="jewel" style="width:128px;height:128px;"></button>
+                <button><img src="assets/images/jewelThree.png" alt="Jewel Three" id="jewel-3" class="jewel" style="width:128px;height:128px;"></button>
+                <button><img src="assets/images/jewelFour.png" alt="Jewel Four" id="jewel-4" class="jewel" style="width:128px;height:128px;"></button>
+                
+            </div>
 
-    <div class="container">
-        <div class="col-sm-3">
+        </div>
 
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  wins
-                  <span id="wins" class="badge badge-primary badge-pill">14</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  losses
-                  <span id="losses" class="badge badge-primary badge-pill">2</span>
-                </li>                
-            </ul>
+    <div class="row">
+
+            <div class="col-md-6">
+
+                
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-success" id="wins">WINS<span class="badge badge-pill badge-light" id="winCount"></span>0</button>
+                        </div>
+                                         
+                   
+                        <div class="col-sm-3">
+                                <button type="button" class="btn btn-danger" id="losses">LOSSES<span class="badge badge-pill badge-light" id="lossCount"></span>0</button>
+                        </div>
+            </div>
+
         </div>
 
     </div>
 
         
-    </div>
+    
 </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
    
 
 </body>
